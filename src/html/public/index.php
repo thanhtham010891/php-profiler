@@ -19,4 +19,4 @@ while ($i > 0) {
     $i--;
 }
 
-echo $randomStr;
+echo 'Done!!';

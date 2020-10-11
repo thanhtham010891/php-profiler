@@ -19,7 +19,11 @@ return array(
     // Saver to use.
     // Please note that 'pdo' and 'mongo' savers are deprecated
     // Prefer 'upload' or 'file' saver.
-    'save.handler' => Profiler::SAVER_UPLOAD,
+    'save.handler' => Profiler::SAVER_FILE,
+
+    'save.handler.file' => array(
+        'filename' => '/var/www/log/xhprof.jsonl'
+    ),
 
     // Environment variables to exclude from profiling data
     'profiler.exclude-env' => array(

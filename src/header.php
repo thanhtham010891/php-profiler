@@ -12,6 +12,5 @@ try {
     $profiler = new Profiler(require_once XHPROF_PROFILER_DIR . '/config.php');
     $profiler->start();
 } catch (Exception $e) {
-    echo $e->getMessage();
     error_log('xhprof: ' . $e->getMessage());
 }
